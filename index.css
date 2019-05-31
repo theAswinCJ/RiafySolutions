@@ -561,14 +561,43 @@ input[type="number"] {
 
 #illustration2 {
   width: 100%;
+  grid-area: illustration2;
 }
 
 #section2Body {
   text-align: center;
+  grid-area: s2body;
+  text-align: left;
 }
 
 #section2Title {
   margin-top: 0px;
+  grid-area: s2title;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .LPsection2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "illustration2 s2title"
+      "illustration2 s2body";
+  }
+
+  #illustration2 {
+    padding-right: 10%;
+    place-self: center;
+    width: 90%;
+  }
+
+  #section2Body {
+    text-align: left;
+  }
+
+  #section2Title {
+    text-align: left;
+  }
 }
 
 /* 

@@ -62,12 +62,14 @@
 
     <script>
       function showHideBurger() {
-        var headerLinks = document.getElementsByClassName("headerLinks");
+        var headerLinks = document.getElementsByClassName("headerLinkGroup");
         for (link of headerLinks) {
           if (link.style.display.toString() == "grid") {
             link.style.display = "none";
+            console.log("to none");
           } else {
             link.style.display = "grid";
+            console.log("to grid");
           }
         }
       }
@@ -94,13 +96,21 @@
               onclick="showHideBurger()"
             />
 
+            <div class="headerLinkGroup">
             <a class="headerLinks" id="headerLink1">Why Choose Us</a>
+            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink2">About</a>
+            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink3">Projects</a>
+            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink4">Services</a>
+            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink5">Enquiry</a>
+            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink6">Contact</a>
+            <hr class="headerLinkLine">
           </div>
+        </div>
           <img
             id="illustration1"
             src="Assets/illustration1.svg"

@@ -59,6 +59,13 @@ h1 {
   margin-top: 40px;
 }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+
 h2 {
   font-family: "Montserrat";
   font-weight: 700;
@@ -66,6 +73,13 @@ h2 {
   color: #ffffff;
   text-align: center;
   line-height: 32px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 
 h3 {
@@ -349,7 +363,9 @@ input[type="number"] {
 
 .Header {
   display: grid;
-  grid-template-areas: "logo burger";
+  grid-template-areas:
+    "logo burger"
+    "links links";
   grid-area: header;
   z-index: 1;
   position: fixed;
@@ -360,9 +376,27 @@ input[type="number"] {
 }
 
 .headerLinks {
-  display: none;
+  display: grid;
+  padding: 5% 0%;
+  color: white;
+  padding-bottom: 0.5%;
 }
 
+.headerLinkGroup {
+  grid-area: links;
+  display: none;
+  align-items: center;
+  justify-items: center;
+  background-color: #fb515e;
+  padding-top: 5%;
+}
+
+.headerLinkLine {
+  width: 60%;
+  border: 0;
+  height: 1px;
+  background: white;
+}
 #HeaderLogo {
   grid-area: logo;
   width: 40%;

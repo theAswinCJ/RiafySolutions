@@ -1,0 +1,556 @@
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+------------------------------- TYPOGRAPHY -----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Assets/fonts/montserrat-black-webfont.woff2") format("woff2"),
+    url("./Assets/fonts/montserrat-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: black;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Assets/fonts/montserrat-bold-webfont.woff2") format("woff2"),
+    url("./Assets/fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Assets/fonts/montserrat-medium-webfont.woff2") format("woff2"),
+    url("./Assets/fonts/montserrat-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Assets/fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("./Assets/fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: regular;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 28px;
+  color: #000000;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 32px;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  line-height: 28px;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 26px;
+}
+
+h5 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: left;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 1.4px;
+  line-height: 18px;
+}
+
+h6 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 1.2px;
+  line-height: 18px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+button {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 26px;
+  text-align: center;
+  width: 80%;
+  height: 58px;
+  border-radius: 6.25rem;
+  background-color: #fb515e;
+  border: none;
+  display: inline-block;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 40px;
+}
+
+.whiteButton {
+  background-color: #ffffff;
+  color: #fb515e;
+}
+
+a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-align: right;
+  line-height: 26px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active {
+  color: #0077ff;
+  text-decoration: underline;
+}
+
+.footera {
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #f1f1f1;
+  border-radius: 50px;
+
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: #909090;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Margins ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+.defaultMarigns {
+  margin: 7% 5%;
+}
+
+@media (min-width: 1124px) {
+  .defaultMarigns {
+    margin: 7% 10%;
+  }
+}
+
+.buttonMargins {
+  margin-top: 10%;
+}
+
+@media (min-width: 560px) {
+  .buttonMargins {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .buttonMargins {
+    margin-top: 17px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .buttonMargins {
+    margin-top: 40px;
+  }
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Animations ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+.buttonHoverAnim {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonHoverAnim:hover {
+  border-radius: 0px;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Landing Page ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+.LandingPage {
+  overflow: hidden;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.leftText {
+  text-align: left;
+}
+
+.whiteText {
+  color: white;
+}
+
+.blackText {
+  color: black;
+}
+
+.upperText {
+  text-transform: uppercase;
+}
+
+.normalText {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 1 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+.LPsection1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.LPsection1 {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "illustration1"
+    "title"
+    "button"
+    "body";
+}
+
+#section1Button {
+  grid-area: button;
+  align-self: center;
+  justify-self: center;
+}
+#section1Title {
+  grid-area: title;
+  margin-top: 0px;
+}
+#section1Body {
+  grid-area: body;
+  text-align: center;
+}
+#section1SubTitle {
+  grid-area: subtitle;
+  display: none;
+}
+
+#illustration1 {
+  grid-area: illustration1;
+  width: 100%;
+  margin-top: 65px;
+}
+
+#LPSection1HighlightColor {
+  background-color: #fb515e;
+  height: 65px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 0;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.Header {
+  display: grid;
+  grid-template-areas: "logo burger";
+  grid-area: header;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: 12px;
+}
+
+.headerLinks {
+  display: none;
+}
+
+#HeaderLogo {
+  grid-area: logo;
+  width: 40%;
+  align-self: center;
+  justify-self: left;
+  padding-left: 10%;
+}
+
+#HeaderHamburger {
+  grid-area: burger;
+  align-self: center;
+  justify-self: center;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 2 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+#illustration2 {
+  width: 100%;
+}
+
+#section2Body {
+  text-align: center;
+}
+
+#section2Title {
+  margin-top: 0px;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 3 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+#illustration3 {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#section3Title {
+  margin-top: 40px;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 4 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+.LPsection4 {
+  display: grid;
+}
+
+#illustration4 {
+  width: 100%;
+}
+
+#section4Button {
+  align-self: center;
+  justify-self: center;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 5 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 6 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 7 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+.section7Feature {
+  margin-top: 20%;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 8 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 9 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+#LPsection9Background {
+  background-color: #fb515e;
+  padding: 7% 0%;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 10 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+
+#section10getInputFormGroup {
+  display: grid;
+}
+.LPsection10inputTextElement {
+  margin-bottom: 0%;
+  padding-left: 5%;
+}
+
+#section10inputButton {
+  align-self: center;
+  justify-self: center;
+}
+
+#input4Element {
+  height: 150px;
+
+  border-radius: 25px;
+}
+
+/* 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+----------------------------------- Section 11 ----------------------------------------
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+*/
+.LPsection11 {
+  margin: 0;
+  padding: 0;
+}
+
+#LPsection11MailTo {
+  background-color: #fb515e;
+  padding: 7% 0%;
+  display: grid;
+}
+
+#section11Button {
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 15px;
+}
+
+#Footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 7% 0%;
+}
+
+.footerpadding {
+  padding: 5% 0%;
+}
+
+#FooterLogo {
+  width: 35%;
+}
+
+#copyright {
+  margin-bottom: 0px;
+}

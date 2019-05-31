@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics 
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-66630383-12"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-66630383-12");
+    </script>-->
+
+    <meta property="og:title" content="Riafy Solutions" />
+    <meta property="og:description" content="Build your next big idea" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Build your next big idea" />
+    <meta name="theme-color" content="#FFD648" />
+    <meta property="og:type" content="website" />
+    <!--
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/jquery.serialize-object.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Assets/favicon/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      href="Assets/Favicon/./Assets/favicon/favicon.ico"
+    />
+    <title>Riafy Solutions</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <script>
+      function showHideBurger() {
+        var headerLinks = document.getElementsByClassName("headerLinks");
+        for (link of headerLinks) {
+          if (link.style.display.toString() == "grid") {
+            link.style.display = "none";
+          } else {
+            link.style.display = "grid";
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <a name="home"></a>
+    <div class="LandingPage">
+      <div id="LPsection1Background">
+        <div class="LPsection1 defaultMarigns">
+          <div class="Header">
+            <img
+              class="logo"
+              id="HeaderLogo"
+              src="Assets/logo.svg"
+              alt="Riafy Solutions Logo"
+              onclick="window.location.href = '#';"
+            />
+            <img
+              id="HeaderHamburger"
+              src="Assets/hamburger.png"
+              alt="Hamburger menu"
+              onclick="showHideBurger()"
+            />
+
+            <a class="headerLinks" id="headerLink1">Why Choose Us</a>
+            <a class="headerLinks" id="headerLink2">About</a>
+            <a class="headerLinks" id="headerLink3">Projects</a>
+            <a class="headerLinks" id="headerLink4">Services</a>
+            <a class="headerLinks" id="headerLink5">Enquiry</a>
+            <a class="headerLinks" id="headerLink6">Contact</a>
+          </div>
+          <img
+            id="illustration1"
+            src="Assets/illustration1.svg"
+            alt="Riafy Solutions Illustration"
+          />
+          <h6 id="section1SubTitle">Providing Technological Solutions</h6>
+          <h1 id="section1Title">Let us help solve your problem</h1>
+          <p id="section1Body">
+            Riafy Solutions is a part of Riafy Technologies formed with the idea
+            of challenging ourself towards advanced technological problems and
+            finding unique solutions for them.
+          </p>
+          <div id="LPSection1HighlightColor"></div>
+          <button id="section1Button">Enquire</button>
+        </div>
+      </div>
+
+      <div id="LPsection2Background">
+        <div class="LPsection2 defaultMarigns">
+          <img
+            id="illustration2"
+            src="Assets/illustration2.svg"
+            alt="Riafy Solutions Illustration"
+          />
+          <h1 id="section2Title">
+            We solve digital problems and have fun doing it
+          </h1>
+          <p id="section2Body" class="centerText">
+            We love technical challenges. If you think you have a tricky problem
+            worth solving, tell us about it.
+          </p>
+        </div>
+      </div>
+
+      <div id="LPsection3Background">
+        <div class="LPsection3 defaultMarigns">
+          <img
+            id="illustration3"
+            src="Assets/illustration3.svg"
+            alt="Riafy Solutions Illustration"
+          />
+          <h1 id="section3Title" class="centerText">
+            We have the team and the resources
+          </h1>
+          <h6 class="centerText" id="section3SubTitle1">First Benefit</h6>
+          <p class="centerText" id="section3Body1">
+            The tactics of building relationships with commercial agents
+            position related system analysis, realizing marketing.
+          </p>
+          <h6 class="centerText" id="section3SubTitle1">Second Benefit</h6>
+          <p class="centerText" id="section3Body2">
+            The tactics of building relationships with commercial agents
+            position related system analysis, realizing marketing.
+          </p>
+        </div>
+      </div>
+
+      <div id="LPsection4Background">
+        <div class="LPsection4 defaultMarigns">
+          <img
+            id="illustration4"
+            src="Assets/illustration4.svg"
+            alt="Riafy Solutions Illustration"
+          />
+          <h1 id="section4Title" class="centerText">
+            Get to know us
+          </h1>
+          <p id="section4Body1" class="centerText">
+            Phasellus euismod in enim non placerat. Cras placerat commodo
+            convallis. Integer sit amet pellentesque sem.
+          </p>
+
+          <button id="section4Button">Play Store</button>
+          <h3 id="section4SubTitle1">
+            25 Million total installs in Google Play Store
+          </h3>
+          <p class="centerText" id="section4Body2">
+            Phasellus euismod in enim non placerat. Cras placerat commodo
+            convallis. Integer sit amet pellentesque sem.
+          </p>
+          <h3 id="section4SubTitle2">3 Callouts from Google IO</h3>
+          <p class="centerText" id="section4Body3">
+            Phasellus euismod in enim non placerat. Cras placerat commodo
+            convallis. Integer sit amet pellentesque sem.
+          </p>
+          <h3 id="section4SubTitle3">
+            Featured by Google Play US for their India’s first Android Developer
+            Story
+          </h3>
+          <p class="centerText" id="section4Body4">Watch it below!</p>
+        </div>
+      </div>
+
+      <div id="LPsection5Background">
+        <div class="LPsection5 defaultMarigns"></div>
+      </div>
+
+      <div id="LPsection6Background">
+        <div class="LPsection6 defaultMarigns">
+          <h6 id="section6SubTitle1" class="centerText">Top Developer Badge</h6>
+          <p id="section6Body1" class="centerText">
+            The tactics of building relationships with commercial agents
+            position related system analysis, realizing marketing.
+          </p>
+          <h6 id="section6SubTitle2" class="centerText">Editor's Choice</h6>
+          <p id="section6Body2" class="centerText">
+            The principle of perception, neglecting the details, distorts
+            sublimated rebranding. According to leading marketers, the brand’s
+            perception is supported by a popular brand.
+          </p>
+          <h6 id="section6SubTitle3" class="centerText">
+            Google Play Case Study
+          </h6>
+          <p id="section6Body3" class="centerText">
+            Perception of the brand essentially generates a complex project,
+            using the experience of previous campaigns.
+          </p>
+        </div>
+      </div>
+
+      <div id="LPsection7Background">
+        <div class="LPsection7 defaultMarigns">
+          <h1 id="section7Title1">Things that keep us excited</h1>
+          <p id="section7Body1" class="centerText">
+            Perception of the brand concentrates rebranding, despite the actions
+            of competitors. Press clipping, as it is commonly believed,
+            incorrectly programs press clipping
+          </p>
+
+          <div class="section7Feature" id="section7Feature1">
+            <img
+              id="section7image1"
+              src="Assets/imagetemplate.png"
+              alt="Riafy Solutions Image"
+            />
+
+            <h3 id="section7Subtitle1">
+              Logo for the E-sport Team
+            </h3>
+          </div>
+
+          <div class="section7Feature" id="section7Feature2">
+            <img
+              id="section7image2"
+              src="Assets/imagetemplate.png"
+              alt="Riafy Solutions Image"
+            />
+
+            <h3 id="section7Subtitle2">
+              Logo for the E-sport Team
+            </h3>
+          </div>
+
+          <div class="section7Feature" id="section7Feature3">
+            <img
+              id="section7image3"
+              src="Assets/imagetemplate.png"
+              alt="Riafy Solutions Image"
+            />
+
+            <h3 id="section7Subtitle3">
+              Logo for the E-sport Team
+            </h3>
+          </div>
+
+          <div class="section7Feature" id="section7Feature4">
+            <img
+              id="section7image4"
+              src="Assets/imagetemplate.png"
+              alt="Riafy Solutions Image"
+            />
+
+            <h3 id="section7Subtitle4">
+              Logo for the E-sport Team
+            </h3>
+          </div>
+
+          <div class="section7Feature" id="section7Feature5">
+            <img
+              id="section7image5"
+              src="Assets/imagetemplate.png"
+              alt="Riafy Solutions Image"
+            />
+
+            <h3 id="section7Subtitle5">
+              Logo for the E-sport Team
+            </h3>
+          </div>
+
+          <div class="section7Feature" id="section7Feature6">
+            <img
+              id="section7image6"
+              src="Assets/imagetemplate.png"
+              alt="Riafy Solutions Image"
+            />
+
+            <h3 id="section7Subtitle6">
+              Logo for the E-sport Team
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="LPsection8Background">
+        <div class="LPsection8 defaultMarigns"></div>
+      </div>
+
+      <div id="LPsection9Background">
+        <div class="LPsection9 defaultMarigns">
+          <h1 id="section7Title" class="whiteText">Let's start right away</h1>
+          <p id="section7Body" class="whiteText">
+            This sounded a very good reason, and Alice was quite pleased to know
+            it. «I never thought of that before!» she said.
+          </p>
+        </div>
+      </div>
+
+      <div id="LPsection10Background">
+        <div class="LPsection10 defaultMarigns">
+          <div id="section10InputFormContainer">
+            <form id="section10getInputFormGroup">
+              <h1 id="section10inputTitle">Request a call from us</h2>
+
+              <p id="section10inputBody" class="centerText">
+                Tell us who you are so that we can contact you.
+              </p>
+
+              <div class="input" id="input1">
+                <h5  id="input1TextElement" class="upperText LPsection10inputTextElement">Name</h5>
+                <input
+                  id="input1Element"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                /><br />
+              </div>
+
+              <div class="input" id="input2">
+                <h5  id="input2TextElement" class="upperText LPsection10inputTextElement">E-mail</h5>
+                <input
+                  id="input2Element"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                /><br />
+              </div>
+
+              <div class="input" id="input3">
+                <h5 id="input3TextElement"  class="upperText LPsection10inputTextElement">Phone Number</h5>
+                <input
+                  id="input3Element"
+                  type="number"
+                  name="phone_number"
+                  placeholder="Phone Number"
+                />
+              </div>
+
+              <div class="input" id="input4">
+                  <h5 id="input4TextElement"  class="upperText LPsection10inputTextElement">Enquiry</h5>
+                  <input
+                    id="input4Element"
+                    type="text"
+                    name="enquiry"
+                    placeholder="What would you like to build?"
+                  />
+                </div>
+              <button
+                class=" buttonMargins buttonHoverAnim"
+                id="section10inputButton"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="LPsection11Background">
+          <div class="LPsection11 defaultMarigns">
+            <h1>Contact Us</h1>
+            <p class="centerText">We develop only quality products and are fully confident in this, because in our plants everything is clean. Creating a loyal customer naturally neutralizes the traditional channel.</p>
+            <div id="LPsection11Address">
+              <h4>Address</h4>
+              <p class="centerText">11301 West Olympic Boulevard Apt. 100 Los Angeles, CA 90064 USA</p>
+            </div>
+            <div id="LPsection11Phone">
+                <h4>Phone Number</h4>
+                <p class="centerText">+30 226 4881 515</p>
+            </div>
+            <div id="LPsection11MailTo">
+              <h2 class="whiteText">Contact us by mail as well</h2>
+              <h4 class="whiteText underline">info@riafysolutions.com</h4>
+              <button id="section11Button" class="whiteButton">Send a Mail</button>
+            </div>
+            <div id="Footer">
+              <a class="footera footerpadding">Why choose us? </a>
+              <a class="footera footerpadding">About</a>
+              <a class="footera footerpadding">Projects</a>
+              <a class="footera footerpadding">Services</a>
+              <a class="footera footerpadding">Enquiry</a>
+              <a class="footera footerpadding">Contact</a>
+            <img
+            class="footerpadding"
+            id="FooterLogo"
+            src="Assets/logored.svg"
+            alt="Riafy Solutions Image"
+          />
+          <p class="centerText" id="copyright">© 2019 Riafy Technologies Private Limited.All Rights Reserved</p>
+            </div>
+</div></div>
+      <!--Landing Page ending div below-->
+    </div>
+
+    <!--
+    <script>
+      (function() {
+        var above768 = true;
+        window.addEventListener("resize", e => {
+          // console.log("resized");
+          if (window.innerWidth >= 768) {
+            above768 = true;
+            var headerLinks = document.getElementsByClassName("headerLinks");
+            for (link of headerLinks) {
+              link.style.display = "grid";
+            }
+          } else {
+            if (above768) {
+              above768 = false;
+              var headerLinks = document.getElementsByClassName("headerLinks");
+              for (link of headerLinks) {
+                link.style.display = "none";
+              }
+            }
+          }
+        });
+      })();
+      /*
+      //Submit data to google sheets
+      var $form = $("#section10getInputFormGroup"),
+        url =
+          "https://script.google.com/macros/s/AKfycbwVtIV7Hbw3YI2TVWGt1-5xD7N17x6QGaYoL4CRWJJgtMeTjv4/exec";
+
+      $("#section10inputButton").on("click", function(e) {
+        e.preventDefault();
+        let name = document.getElementById("input1Element").value;
+        let phone = document.getElementById("input2Element").value;
+        let company = document.getElementById("input3Element").value;
+        if (name.length > 0 && phone.length > 0 && company.length > 0) {
+          var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject(),
+            success: () => {
+              swal(
+                "Success",
+                "We have received your details. We will reach out to you soon.",
+                "success"
+              );
+            },
+            error: () => {
+              swal(
+                "Network Error",
+                "Please check your network connection and try again.",
+                "error"
+              );
+            }
+          });
+        } else {
+          swal(
+            "You missed something",
+            "Please enter your name,phone number and the company you work for."
+          );
+        }
+      }); 
+       */
+    </script>
+  
+-->
+  </body>
+</html>

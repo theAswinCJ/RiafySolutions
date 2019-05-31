@@ -61,8 +61,8 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 48px;
-    line-height: 62px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
@@ -153,6 +153,13 @@ button {
   color: #fb515e;
 }
 
+@media (min-width: 768px) {
+  button {
+    width: 60%;
+    height: 48px;
+  }
+}
+
 a {
   font-family: "Montserrat";
   font-weight: 500;
@@ -167,6 +174,12 @@ a {
 a:active {
   color: #0077ff;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  a {
+    font-size: 14px;
+  }
 }
 
 .footera {
@@ -347,18 +360,11 @@ input[type="number"] {
 }
 
 #LPSection1HighlightColor {
-  background-color: #fb515e;
-  height: 65px;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  z-index: 0;
+  display: none;
+}
 
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+#headerRedHighlight {
+  display: none;
 }
 
 .Header {
@@ -372,7 +378,9 @@ input[type="number"] {
   left: 0;
   right: 0;
   top: 0;
-  padding-top: 12px;
+  padding-top: 4%;
+  background-color: #fb515e;
+  padding-bottom: 4%;
 }
 
 .headerLinks {
@@ -382,8 +390,12 @@ input[type="number"] {
   padding-bottom: 0.5%;
 }
 
-.headerLinkGroup {
+.headerLinkContainer {
   grid-area: links;
+  padding: 0% 5%;
+}
+
+.headerLinkGroup {
   display: none;
   align-items: center;
   justify-items: center;
@@ -409,6 +421,134 @@ input[type="number"] {
   grid-area: burger;
   align-self: center;
   justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .LPsection1 {
+    grid-template-columns: 25% 35% 40%;
+    grid-template-areas:
+      "header header header"
+      "illustration1 illustration1 subtitle"
+      "illustration1 illustration1 title"
+      "illustration1 illustration1 body"
+      "illustration1 illustration1 button";
+  }
+  #section1Title {
+    padding-top: 35%;
+  }
+
+  #LPSection1HighlightColor {
+    background-color: #fb515e;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+  }
+
+  #illustration1 {
+    width: 70%;
+    justify-self: end;
+    align-self: center;
+    padding-right: 10%;
+    z-index: 1;
+  }
+
+  #section1Title {
+    text-align: left;
+  }
+
+  #section1Body {
+    text-align: left;
+    padding-right: 10%;
+  }
+
+  #section1Button {
+    justify-self: left;
+  }
+
+  #HeaderHamburger {
+    display: none;
+  }
+
+  #headerLink1 {
+    grid-area: link1;
+  }
+
+  #headerLink2 {
+    grid-area: link2;
+  }
+
+  #headerLink3 {
+    grid-area: link3;
+  }
+
+  #headerLink4 {
+    grid-area: link4;
+  }
+
+  #headerLink5 {
+    grid-area: link5;
+  }
+
+  #headerLink6 {
+    grid-area: link6;
+  }
+
+  #HeaderLogo {
+    width: 35%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .headerLinkGroup {
+    display: grid;
+    grid-template-columns: repeat(1fr, 7);
+    grid-template-areas: "link1 link1 link2 link3 link4 link5 link6";
+    background: white;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+
+  .headerLinkLine {
+    display: none;
+  }
+
+  .headerLinks {
+    color: black;
+    margin: 0% 5%;
+    padding: 0%;
+  }
+
+  #headerRedHighlight {
+    display: grid;
+    grid-area: colour;
+
+    background-color: #fb515e;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .Header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "logo links";
+    grid-area: header;
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    padding: 0%;
+  }
 }
 
 /* 

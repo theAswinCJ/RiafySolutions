@@ -889,6 +889,59 @@ input[type="number"] {
 
 .section7Feature {
   margin-top: 20%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .section7Feature {
+    margin-top: 10%;
+  }
+
+  #section7Title1 {
+    grid-area: section7Title1;
+    margin: 2%;
+  }
+
+  #section7Body1 {
+    grid-area: section7Body1;
+    margin-bottom: 2%;
+  }
+
+  #section7Feature1 {
+    grid-area: section7Feature1;
+  }
+
+  #section7Feature2 {
+    grid-area: section7Feature2;
+  }
+
+  #section7Feature3 {
+    grid-area: section7Feature3;
+  }
+
+  #section7Feature4 {
+    grid-area: section7Feature4;
+  }
+
+  #section7Feature5 {
+    grid-area: section7Feature5;
+  }
+
+  #section7Feature6 {
+    grid-area: section7Feature6;
+  }
+  .LPsection7 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section7Title1 section7Title1"
+      "section7Body1 section7Body1"
+      "section7Feature1 section7Feature2"
+      "section7Feature3 section7Feature4"
+      "section7Feature5 section7Feature6";
+  }
 }
 
 /* 

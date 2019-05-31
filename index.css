@@ -1038,6 +1038,8 @@ input[type="number"] {
   }
   #section10inputButton {
     grid-area: section10inputButton;
+    height: 58px;
+    width: 35%;
   }
 
   #input1 {
@@ -1085,6 +1087,12 @@ input[type="number"] {
   display: grid;
 }
 
+#openMail {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
 #section11Button {
   align-self: center;
   justify-self: center;
@@ -1096,6 +1104,7 @@ input[type="number"] {
   align-items: center;
   justify-items: center;
   padding: 7% 0%;
+  padding-bottom: 3%;
 }
 
 .footerpadding {
@@ -1108,4 +1117,87 @@ input[type="number"] {
 
 #copyright {
   margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  #s11Title {
+    grid-area: s11Title;
+  }
+
+  #s11Body {
+    grid-area: s11Body;
+  }
+
+  #LPsection11Address {
+    grid-area: LPsection11Address;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #LPsection11Phone {
+    grid-area: LPsection11Phone;
+  }
+
+  #LPsection11MailTo {
+    grid-area: LPsection11MailTo;
+  }
+
+  #Footer {
+    grid-area: Footer;
+  }
+
+  #LPsection11MailTo {
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .footerpadding {
+    padding: 5% 5%;
+  }
+
+  .LPsection11 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "s11Title s11Title"
+      "s11Body s11Body"
+      "LPsection11Address LPsection11Phone"
+      "LPsection11MailTo LPsection11MailTo"
+      "Footer Footer";
+  }
+
+  #Footer {
+    display: grid;
+    margin: 0% 10%;
+  }
+
+  #footerLinks {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #footerLinkContainer {
+    grid-area: flinks;
+    width: 100%;
+  }
+
+  #FooterLogo {
+    grid-area: flogo;
+    width: 25%;
+    justify-self: start;
+  }
+
+  #copyright {
+    grid-area: copyright;
+    font-size: 12px;
+  }
+
+  #Footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "flinks flinks" "flogo copyright";
+  }
 }

@@ -618,6 +618,57 @@ input[type="number"] {
   margin-top: 40px;
 }
 
+@media (min-width: 768px) {
+  #illustration3 {
+    grid-area: illustration3;
+  }
+
+  #section3Title {
+    grid-area: section3Title;
+    text-align: left;
+    padding-right: 20%;
+  }
+
+  #s3Blurb1 {
+    grid-area: s3Blurb1;
+  }
+
+  #s3Blurb2 {
+    grid-area: s3Blurb2;
+  }
+
+  .s3Blurb {
+    display: grid;
+  }
+
+  #section3SubTitle1 {
+    text-align: left;
+    margin-bottom: 2%;
+  }
+
+  #section3Body1 {
+    text-align: left;
+    padding-right: 10%;
+  }
+
+  #section3SubTitle2 {
+    text-align: left;
+    margin-bottom: 2%;
+  }
+
+  #section3Body2 {
+    text-align: left;
+    padding-right: 10%;
+  }
+
+  .LPsection3 {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas:
+      "section3Title s3Blurb1 s3Blurb2"
+      "illustration3 illustration3 illustration3";
+  }
+}
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -639,6 +690,96 @@ input[type="number"] {
   justify-self: center;
 }
 
+.s4Blurb {
+  display: grid;
+  padding: 0% 10%;
+}
+
+@media (min-width: 768px) {
+  #illustration4 {
+    grid-area: illustration4;
+  }
+
+  #section4Title {
+    grid-area: section4Title;
+    text-align: left;
+    padding-right: 5%;
+  }
+
+  #section4Body1 {
+    grid-area: section4Body1;
+    text-align: left;
+    padding-right: 5%;
+  }
+
+  #section4Button {
+    grid-area: section4Button;
+    align-self: start;
+    justify-self: start;
+  }
+
+  #s4Blurb1 {
+    grid-area: s4Blurb1;
+  }
+
+  #s4Blurb2 {
+    grid-area: s4Blurb2;
+  }
+
+  #s4Blurb3 {
+    grid-area: s4Blurb3;
+  }
+
+  #section4SubTitle1 {
+    text-align: left;
+  }
+
+  #section4Body2 {
+    text-align: left;
+    margin-bottom: 3%;
+  }
+
+  #section4SubTitle2 {
+    text-align: left;
+  }
+
+  #section4Body3 {
+    text-align: left;
+    margin-bottom: 3%;
+  }
+
+  .s4Blurb {
+    padding-top: 10%;
+    padding-bottom: 4%;
+  }
+
+  .LPsection4 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section4Title illustration4"
+      "section4Body1 illustration4"
+      "section4Button illustration4"
+      "s4Blurb1 s4Blurb2"
+      "s4Blurb3 s4Blurb3";
+  }
+
+  #s4Blurb3 {
+    grid-area: s4Blurb3;
+    justify-self: center;
+    align-self: center;
+    padding: 0% 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .LPsection4 {
+    grid-template-columns: 26% 33.333% 40.666%;
+    grid-template-areas:
+      "section4Title illustration4 s4Blurb1"
+      "section4Body1 illustration4 s4Blurb2"
+      "section4Button illustration4 s4Blurb3";
+  }
+}
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------

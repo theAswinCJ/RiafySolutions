@@ -887,6 +887,9 @@ input[type="number"] {
 ------------------------------------------------------------------------------------
 */
 
+.s7image {
+  width: 100%;
+}
 .section7Feature {
   margin-top: 20%;
   display: grid;
@@ -895,6 +898,10 @@ input[type="number"] {
 }
 
 @media (min-width: 768px) {
+  .s7image {
+    width: 90%;
+  }
+
   .section7Feature {
     margin-top: 10%;
   }
@@ -965,6 +972,16 @@ input[type="number"] {
   padding: 7% 0%;
 }
 
+#section7Body {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #LPsection9Background {
+    padding: 0.5% 0%;
+  }
+}
+
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -988,8 +1005,66 @@ input[type="number"] {
 
 #input4Element {
   height: 150px;
-
   border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  #input3TextElement {
+    padding-left: 2.5%;
+  }
+
+  #input4TextElement {
+    padding-left: 2.5%;
+  }
+  #section10inputTitle {
+    grid-area: section10inputTitle;
+  }
+
+  #section10inputBody {
+    grid-area: section10inputBody;
+  }
+
+  #input1 {
+    grid-area: input1;
+  }
+  #input2 {
+    grid-area: input2;
+  }
+  #input3 {
+    grid-area: input3;
+  }
+  #input4 {
+    grid-area: input4;
+  }
+  #section10inputButton {
+    grid-area: section10inputButton;
+  }
+
+  #input1 {
+    padding-right: 10%;
+  }
+  #input2 {
+    padding-left: 10%;
+  }
+
+  #section10inputTitle {
+    margin-bottom: 1%;
+  }
+
+  #section10inputButton {
+    margin-top: 5%;
+  }
+  #section10getInputFormGroup {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section10inputTitle section10inputTitle"
+      "section10inputBody section10inputBody"
+      "input1 input2"
+      "input3 input3"
+      "input4 input4"
+      "section10inputButton section10inputButton";
+  }
 }
 
 /* 

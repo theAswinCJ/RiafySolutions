@@ -77,8 +77,8 @@ h2 {
 
 @media (min-width: 768px) {
   h2 {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -796,6 +796,89 @@ input[type="number"] {
 ------------------------------------------------------------------------------------
 */
 
+#section6Title {
+  display: none;
+}
+
+#section6Body4 {
+  display: none;
+}
+
+#section6Body5 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #section6SubTitle1 {
+    text-align: left;
+  }
+
+  #section6Body1 {
+    text-align: left;
+    padding-right: 7%;
+  }
+
+  #section6SubTitle2 {
+    text-align: left;
+  }
+
+  #section6Body2 {
+    text-align: left;
+    padding-right: 7%;
+  }
+
+  #section6SubTitle3 {
+    text-align: left;
+  }
+
+  #section6Body3 {
+    text-align: left;
+    padding-right: 7%;
+  }
+
+  #section6Title {
+    display: grid;
+    grid-area: section6Title;
+    text-align: left;
+    padding-bottom: 5%;
+  }
+
+  #section6Body4 {
+    display: grid;
+    grid-area: section6Body1;
+    text-align: left;
+    padding-right: 15%;
+  }
+
+  #section6Body5 {
+    display: grid;
+    grid-area: section6Body2;
+    text-align: left;
+    padding-right: 15%;
+  }
+
+  #s6Blurb1 {
+    grid-area: s6Blurb1;
+    text-align: left;
+  }
+
+  #s6Blurb2 {
+    grid-area: s6Blurb2;
+  }
+
+  #s6Blurb3 {
+    grid-area: s6Blurb3;
+  }
+
+  .LPsection6 {
+    display: grid;
+    grid-template-columns: 33.333% 16.6665% 16.6665% 33.333%;
+    grid-template-areas:
+      "s6Blurb1 s6Blurb2 s6Blurb2 s6Blurb3"
+      "section6Title section6Title section6Title section6Title"
+      "section6Body1 section6Body1 section6Body2 section6Body2";
+  }
+}
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------

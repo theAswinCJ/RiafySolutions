@@ -985,7 +985,7 @@ input[type="number"] {
   }
 
   #s4Blurb3 {
-    padding: 5% 10%;
+    padding: 0% 5% 0% 15%;
   }
 
   #section4SubTitle3 {
@@ -1022,6 +1022,19 @@ input[type="number"] {
     margin-bottom: 5%;
   }
 }
+
+@media (min-width: 1250px) {
+  #section4Body2 {
+    display: grid;
+  }
+
+  #section4Body3 {
+    display: grid;
+  }
+  #section4Body4 {
+    display: grid;
+  }
+}
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -1029,6 +1042,17 @@ input[type="number"] {
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
 */
+#LPsection5FBvideo {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #LPsection5FBvideo {
+    padding: 5% 15%;
+    padding-bottom: 2%;
+  }
+}
 
 /* 
 ------------------------------------------------------------------------------------
@@ -1551,6 +1575,7 @@ input[type="number"] {
       "LPsection11Address LPsection11Phone LPsection11MailTo"
       "Footer Footer Footer";
     margin-left: 10%;
+    margin-top: 5%;
   }
 
   #Footer {

@@ -66,10 +66,8 @@
         for (link of headerLinks) {
           if (link.style.display.toString() == "grid") {
             link.style.display = "none";
-            console.log("to none");
           } else {
             link.style.display = "grid";
-            console.log("to grid");
           }
         }
       }
@@ -100,17 +98,12 @@
             <div class="headerLinkContainer">
             <div class="headerLinkGroup">
             <a class="headerLinks" id="headerLink1">Why Choose Us</a>
-            <hr class="headerLinkLine">
+            <!-- <hr class="headerLinkLine"> -->
             <a class="headerLinks" id="headerLink2">About</a>
-            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink3">Projects</a>
-            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink4">Services</a>
-            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink5">Enquiry</a>
-            <hr class="headerLinkLine">
             <a class="headerLinks" id="headerLink6">Contact</a>
-            <hr class="headerLinkLine">
           </div></div>
         </div>
           <img
@@ -380,7 +373,7 @@
                   id="input2Element"
                   type="text"
                   name="name"
-                  placeholder="Name"
+                  placeholder="E-mail"
                 /><br />
               </div>
 
@@ -429,12 +422,13 @@
                 <p class="centerText">+30 226 4881 515</p>
             </div>
             <div id="LPsection11MailTo">
+              <div id="s11mailtocontent">
             <a id="openMail" href="mailto:sreenath@riafy.me">
               <h2 class="whiteText">Contact us by mail as well</h2>
               <h4 class="whiteText underline">info@riafysolutions.com</h4>
               <button id="section11Button" class="whiteButton">Send a Mail</button>
             </a>
-            </div>
+            </div></div>
             <div id="Footer">
               <div id="footerLinkContainer">
               <div id="footerLinks">

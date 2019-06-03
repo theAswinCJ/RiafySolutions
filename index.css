@@ -192,6 +192,13 @@ a:active {
   font-weight: 400;
 }
 
+@media (min-width: 1440px) {
+  .footera {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
 input {
   width: 100%;
   padding: 12px 20px;
@@ -227,18 +234,18 @@ input[type="number"] {
 */
 
 .defaultMarigns {
-  margin: 7% 5%;
+  padding: 7% 5%;
 }
 
 @media (min-width: 1124px) {
   .defaultMarigns {
-    margin: 7% 10%;
+    padding: 7% 10%;
   }
 }
 
 @media (min-width: 1024px) {
   .defaultMarigns {
-    margin: 5% 10%;
+    padding: 5% 10%;
   }
 }
 
@@ -324,6 +331,13 @@ input[type="number"] {
   text-decoration: underline;
 }
 
+.odd {
+  background-color: white;
+}
+.even {
+  background-color: #eef3f8;
+}
+
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -345,6 +359,10 @@ input[type="number"] {
     "title"
     "button"
     "body";
+}
+
+#HeaderLogo {
+  cursor: pointer;
 }
 
 #section1Button {
@@ -1592,5 +1610,9 @@ input[type="number"] {
 
   #footerLinks {
     margin: 0% 5%;
+  }
+
+  #FooterLogo {
+    cursor: pointer;
   }
 }

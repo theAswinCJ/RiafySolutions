@@ -25,14 +25,14 @@
     <meta name="description" content="Build your next big idea" />
     <meta name="theme-color" content="#FFD648" />
     <meta property="og:type" content="website" />
-    <!--
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script src="./JS/jquery.serialize-object.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 
     <link
       rel="apple-touch-icon"
@@ -77,7 +77,7 @@
   <body>
     <a name="home"></a>
     <div class="LandingPage">
-      <div id="LPsection1Background">
+      <div id="LPsection1Background" class="odd">
         <div class="LPsection1 defaultMarigns">
           <div class="Header">
             <div id="headerRedHighlight"></div>
@@ -97,13 +97,14 @@
 
             <div class="headerLinkContainer">
             <div class="headerLinkGroup">
-            <a class="headerLinks" id="headerLink1">Why Choose Us</a>
+            <a class="headerLinks" id="headerLink1" 
+            href="#whychooseus">Why Choose Us</a>
             <!-- <hr class="headerLinkLine"> -->
-            <a class="headerLinks" id="headerLink2">About</a>
-            <a class="headerLinks" id="headerLink3">Projects</a>
-            <a class="headerLinks" id="headerLink4">Services</a>
-            <a class="headerLinks" id="headerLink5">Enquiry</a>
-            <a class="headerLinks" id="headerLink6">Contact</a>
+            <a class="headerLinks" id="headerLink2" href="#about">About</a>
+            <a class="headerLinks" id="headerLink3" href="#projects">Projects</a>
+            <a class="headerLinks" id="headerLink4" href="#services">Services</a>
+            <a class="headerLinks" id="headerLink5" href="#enquiry">Enquiry</a>
+            <a class="headerLinks" id="headerLink6" href="#contact">Contact</a>
           </div></div>
         </div>
           <img
@@ -119,17 +120,22 @@
             finding unique solutions for them.
           </p>
           <div id="LPSection1HighlightColor"></div>
-          <button id="section1Button">Enquire</button>
+          <button id="section1Button" 
+          onclick="window.location.href ='#enquiry';">Enquire</button>
+
         </div>
+        <a class="anchor" name="whychooseus"></a>
       </div>
 
-      <div id="LPsection2Background">
+
+      <div id="LPsection2Background"  class="even">
         <div class="LPsection2 defaultMarigns">
           <img
             id="illustration2"
-            src="Assets/illustration2b.svg"
+            src="Assets/illustration2c.svg"
             alt="Riafy Solutions Illustration"
           />
+
           <h1 id="section2Title">
             We solve digital problems and have fun doing it
           </h1>
@@ -140,7 +146,7 @@
         </div>
       </div>
 
-      <div id="LPsection3Background">
+      <div id="LPsection3Background"  class="odd">
         <div class="LPsection3 defaultMarigns">
           <img
             id="illustration3"
@@ -162,16 +168,20 @@
             The tactics of building relationships with commercial agents
             position related system analysis, realizing marketing.
           </p></div>
+
+      <a class="anchor" name="about"></a>
         </div>
       </div>
 
-      <div id="LPsection4Background">
+
+      <div id="LPsection4Background"   class="even">
         <div class="LPsection4 defaultMarigns">
           <img
             id="illustration4"
             src="Assets/illustration4.svg"
             alt="Riafy Solutions Illustration"
           />
+
           <h1 id="section4Title" class="centerText">
             Get to know us
           </h1>
@@ -180,7 +190,11 @@
             convallis. Integer sit amet pellentesque sem.
           </p>
 
-          <button id="section4Button">Play Store</button>
+          <button id="section4Button" 
+          onclick="window.open(
+            'https\://play.google.com/store/apps/developer?id=Riafy+Technologies&hl=en_IN',
+            '_blank'
+          ); ">Play Store</button>
           <div class="s4Blurb" id="s4Blurb1">
           <h3 id="section4SubTitle1">
             25 Million total installs in Google Play Store
@@ -207,11 +221,11 @@
         </div></div>
       </div>
 
-      <div id="LPsection5Background">
+      <div id="LPsection5Background"  class="odd">
         <div class="LPsection5 defaultMarigns"></div>
       </div>
 
-      <div id="LPsection6Background">
+      <div id="LPsection6Background"  class="even">
         <div class="LPsection6 defaultMarigns">
           <div class="s6Blurb" id="s6Blurb1">
           <h6 id="section6SubTitle1" class="centerText">Top Developer Badge</h6>
@@ -238,13 +252,15 @@
             using the experience of previous campaigns.
           </p></div>
 
+          <a class="anchor" name="projects"></a>
           <h2 class="blackText" id="section6Title">Recipients of Best startup award, Most improved startup award, Best innovative award, Chosen for Digital India Case Study, Speaker at TEDx and showcased 7 times on Google Play Home screen. </h2>
           <p id="section6Body4">The promotion, as follows from the above, synchronizes the strategic market plan, expanding market share. Pak-shot, as follows from the above, concentrates the promoted presentation material. Leadership in sales induces role-based customer demand. Market capacity is ambiguous. </p>
         <p id="section6Body5">The product life cycle stabilizes the exhibition stand. The consumer society creates a constructive media mix. According to the latest research, a niche project balances the market research method. Positioning in the market, at first glance, causes creative buying and selling.</p>
         </div>
       </div>
 
-      <div id="LPsection7Background">
+
+      <div id="LPsection7Background"  class="odd">
         <div class="LPsection7 defaultMarigns">
           <h1 id="section7Title1">Things that keep us excited</h1>
           <p id="section7Body1" class="centerText">
@@ -333,13 +349,17 @@
         </div>
       </div>
 
-      <div id="LPsection8Background">
+
+      <a class="anchor" name="services"></a>
+      <div id="LPsection8Background"  class="even">
         <div class="LPsection8 defaultMarigns"></div>
       </div>
 
-      <div id="LPsection9Background">
+      <div id="LPsection9Background"  class="odd">
         <div class="LPsection9 defaultMarigns">
           <h1 id="section9Title" class="whiteText">Let's start right away</h1>
+
+          <a class="anchor" name="enquiry"></a>
           <p id="section9Body" class="whiteText centerText">
             This sounded a very good reason, and Alice was quite pleased to know
             it. «I never thought of that before!» she said.
@@ -347,7 +367,8 @@
         </div>
       </div>
 
-      <div id="LPsection10Background">
+
+      <div id="LPsection10Background"  class="even">
         <div class="LPsection10 defaultMarigns">
           <div id="section10InputFormContainer">
             <form id="section10getInputFormGroup">
@@ -396,6 +417,7 @@
                     placeholder="What would you like to build?"
                   />
                 </div>
+                <a class="anchor" name="contact"></a>
               <button
                 class=" buttonMargins buttonHoverAnim"
                 id="section10inputButton"
@@ -409,39 +431,40 @@
       </div>
 
 
-      <div id="LPsection11Background">
+      <div id="LPsection11Background"  class="odd">
           <div class="LPsection11 defaultMarigns">
             <h1 id="s11Title">Contact Us</h1>
             <p  id="s11Body" class="centerText">We develop only quality products and are fully confident in this, because in our plants everything is clean. Creating a loyal customer naturally neutralizes the traditional channel.</p>
             <div id="LPsection11Address">
               <h4>Address</h4>
-              <p class="centerText">11301 West Olympic Boulevard Apt. 100 Los Angeles, CA 90064 USA</p>
+              <p class="centerText">Riafy Technologies, Integrated Startup Complex, Kerala Technology Innovation Zone (KTIZ), Kalamassery, Kochi, Kerala, 683503</p>
             </div>
             <div id="LPsection11Phone">
                 <h4>Phone Number</h4>
-                <p class="centerText">+30 226 4881 515</p>
+                <p class="centerText">+91 9496 33 7421</p>
             </div>
             <div id="LPsection11MailTo">
               <div id="s11mailtocontent">
             <a id="openMail" href="mailto:sreenath@riafy.me">
               <h2 class="whiteText">Contact us by mail as well</h2>
-              <h4 class="whiteText underline">info@riafysolutions.com</h4>
+              <h4 class="whiteText underline">sreenath@riafy.me</h4>
               <button id="section11Button" class="whiteButton">Send a Mail</button>
             </a>
             </div></div>
             <div id="Footer">
               <div id="footerLinkContainer">
               <div id="footerLinks">
-              <a class="footera footerpadding">Why choose us? </a>
-              <a class="footera footerpadding">About</a>
-              <a class="footera footerpadding">Projects</a>
-              <a class="footera footerpadding">Services</a>
-              <a class="footera footerpadding">Enquiry</a>
-              <a class="footera footerpadding">Contact</a></div></div>
+              <a class="footera footerpadding"  href="#whychooseus">Why choose us? </a>
+              <a class="footera footerpadding"  href="#about">About</a>
+              <a class="footera footerpadding"  href="#projects">Projects</a>
+              <a class="footera footerpadding"  href="#services">Services</a>
+              <a class="footera footerpadding"  href="#enquiry">Enquiry</a>
+              <a class="footera footerpadding"  href="#contact">Contact</a></div></div>
             <img
             id="FooterLogo"
             src="Assets/logored.svg"
-            alt="Riafy Solutions Image"
+            alt="Riafy Solutions Logo"
+            onclick="window.location.href = '#';"
           />
           <p class="centerText" id="copyright">© 2019 Riafy Technologies Private Limited.All Rights Reserved</p>
             </div>
@@ -449,7 +472,6 @@
       <!--Landing Page ending div below-->
     </div>
 
-    <!--
     <script>
       (function() {
         var above768 = true;
@@ -457,14 +479,14 @@
           // console.log("resized");
           if (window.innerWidth >= 768) {
             above768 = true;
-            var headerLinks = document.getElementsByClassName("headerLinks");
+            var headerLinks = document.getElementsByClassName("headerLinkGroup");
             for (link of headerLinks) {
               link.style.display = "grid";
             }
           } else {
             if (above768) {
               above768 = false;
-              var headerLinks = document.getElementsByClassName("headerLinks");
+              var headerLinks = document.getElementsByClassName("headerLinkGroup");
               for (link of headerLinks) {
                 link.style.display = "none";
               }
@@ -472,18 +494,19 @@
           }
         });
       })();
-      /*
+      
       //Submit data to google sheets
       var $form = $("#section10getInputFormGroup"),
         url =
-          "https://script.google.com/macros/s/AKfycbwVtIV7Hbw3YI2TVWGt1-5xD7N17x6QGaYoL4CRWJJgtMeTjv4/exec";
+          "insert new GOOGLE SHEET URL here after configuration";
 
       $("#section10inputButton").on("click", function(e) {
         e.preventDefault();
         let name = document.getElementById("input1Element").value;
-        let phone = document.getElementById("input2Element").value;
-        let company = document.getElementById("input3Element").value;
-        if (name.length > 0 && phone.length > 0 && company.length > 0) {
+        let email = document.getElementById("input2Element").value;
+        let phone = document.getElementById("input3Element").value;
+        let enquiry = document.getElementById("input4Element").value;
+        if (name.length > 0 && email.length > 0 && phone.length > 0 && enquiry.length > 0) {
           var jqxhr = $.ajax({
             url: url,
             method: "GET",
@@ -507,13 +530,12 @@
         } else {
           swal(
             "You missed something",
-            "Please enter your name,phone number and the company you work for."
+            "Please enter your name,email, phone number and your enquiry."
           );
         }
       }); 
-       */
+       
     </script>
   
--->
   </body>
 </html>

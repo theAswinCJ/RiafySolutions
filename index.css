@@ -354,11 +354,11 @@ input[type="number"] {
 }
 #section1Title {
   grid-area: title;
-  margin-top: 0px;
 }
 #section1Body {
   grid-area: body;
   text-align: center;
+  padding: 0% 2%;
 }
 #section1SubTitle {
   grid-area: subtitle;
@@ -368,7 +368,6 @@ input[type="number"] {
 #illustration1 {
   grid-area: illustration1;
   width: 100%;
-  margin-top: 65px;
 }
 
 #LPSection1HighlightColor {
@@ -437,7 +436,41 @@ input[type="number"] {
   justify-self: center;
 }
 
+@media (min-width: 401px) {
+  #section1Button {
+    width: 60%;
+  }
+}
+
+@media (min-width: 501px) {
+  #HeaderLogo {
+    width: 30%;
+  }
+
+  #section1Button {
+    width: 50%;
+  }
+
+  #section1Body {
+    padding: 0% 4%;
+  }
+
+  .Header {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+
+@media (min-width: 560px) {
+  #section1Button {
+    width: 40%;
+  }
+}
+
 @media (min-width: 768px) {
+  #section1Button {
+    width: 60%;
+  }
   .LPsection1 {
     grid-template-columns: 25% 35% 40%;
     grid-template-areas:
@@ -449,8 +482,10 @@ input[type="number"] {
   }
 
   #section1Title {
-    padding-top: 15%;
+    padding-top: 30%;
     padding-right: 10%;
+    align-self: end;
+    margin-bottom: 5%;
   }
 
   #LPSection1HighlightColor {
@@ -586,11 +621,53 @@ input[type="number"] {
     padding-top: 0%;
     padding-right: 20%;
     margin-bottom: 5%;
+    margin-top: 2%;
   }
 
   #section1Body {
     padding-right: 20%;
     margin-bottom: 5%;
+    padding-left: 0%;
+  }
+
+  #section1Button {
+    margin-bottom: 10%;
+    width: 45%;
+    height: 58px;
+  }
+}
+
+@media (min-width: 1100px) {
+  #section1Button {
+    margin-bottom: 12%;
+  }
+
+  #section1Title {
+    padding-right: 25%;
+  }
+
+  #section1Body {
+    padding-right: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #section1Button {
+    margin-bottom: 14%;
+  }
+}
+
+@media (min-width: 1300px) {
+  #section1Button {
+    margin-bottom: 16%;
+  }
+
+  #section1Title {
+    padding-right: 40%;
+  }
+
+  #section1Body {
+    padding-right: 40%;
   }
 }
 
@@ -610,15 +687,25 @@ input[type="number"] {
 #section2Body {
   text-align: center;
   grid-area: s2body;
-  text-align: left;
 }
 
 #section2Title {
-  margin-top: 0px;
   grid-area: s2title;
-  text-align: left;
 }
 
+.LPsection2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "illustration2" "s2title" "s2body";
+}
+
+@media (min-width: 560px) {
+  #illustration2 {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+  }
+}
 @media (min-width: 768px) {
   .LPsection2 {
     display: grid;
@@ -630,7 +717,8 @@ input[type="number"] {
 
   #illustration2 {
     padding-right: 10%;
-    place-self: center;
+    justify-self: center;
+    align-self: center;
     width: 90%;
   }
 
@@ -647,12 +735,29 @@ input[type="number"] {
   }
 }
 
+@media (min-width: 850px) {
+  #illustration2 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  #section2Title {
+    padding-right: 10%;
+  }
+  #section2Body {
+    padding-right: 10%;
+  }
+}
+
 @media (min-width: 1024px) {
   #section2Body {
-    margin-right: 20%;
+    margin-right: 0%;
+    padding-right: 10%;
   }
   #section2Title {
-    margin-right: 20%;
+    margin-right: 0%;
+    padding-right: 10%;
   }
 }
 
@@ -751,20 +856,33 @@ input[type="number"] {
   padding: 0% 10%;
 }
 
+@media (min-width: 500px) {
+  #illustration4 {
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
 @media (min-width: 768px) {
   #illustration4 {
     grid-area: illustration4;
+    width: 100%;
   }
 
   #section4Title {
     grid-area: section4Title;
     text-align: left;
     padding-right: 5%;
+    align-self: end;
+    justify-self: start;
   }
 
   #section4Body1 {
     grid-area: section4Body1;
     text-align: left;
+    margin: 0;
+    padding: 0;
     padding-right: 5%;
   }
 
@@ -836,6 +954,10 @@ input[type="number"] {
       "section4Button illustration4 s4Blurb3";
   }
 
+  #section4Body1 {
+    margin: 15% 0%;
+    margin-top: 10%;
+  }
   .s4Blurb {
     padding: 0% 5% 0% 15%;
   }
@@ -999,7 +1121,12 @@ input[type="number"] {
   justify-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
+  .section7Feature {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 560px) {
   .s7image {
     width: 90%;
   }
@@ -1053,6 +1180,11 @@ input[type="number"] {
   }
 }
 
+@media (min-width: 900px) {
+  #section7Body1 {
+    padding: 0% 10%;
+  }
+}
 @media (min-width: 1024px) {
   .LPsection7 {
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -1095,6 +1227,12 @@ input[type="number"] {
   }
 }
 
+@media (min-width: 900px) {
+  #section9Body {
+    padding: 0% 10%;
+  }
+}
+
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
@@ -1120,7 +1258,11 @@ input[type="number"] {
   height: 150px;
   border-radius: 25px;
 }
-
+@media (min-width: 560px) {
+  #section10InputFormContainer {
+    margin: 0% 15%;
+  }
+}
 @media (min-width: 768px) {
   #input3TextElement {
     padding-left: 2.5%;
@@ -1152,7 +1294,7 @@ input[type="number"] {
   #section10inputButton {
     grid-area: section10inputButton;
     height: 58px;
-    width: 35%;
+    width: 45%;
   }
 
   #input1 {
@@ -1184,7 +1326,7 @@ input[type="number"] {
 
 @media (min-width: 1024px) {
   #section10InputFormContainer {
-    padding: 0% 20%;
+    padding: 0% 0%;
   }
 
   #section10inputButton {
@@ -1240,16 +1382,60 @@ input[type="number"] {
 
 #FooterLogo {
   width: 35%;
+  padding: 10% 0%;
 }
 
 #copyright {
   margin-bottom: 0px;
+  padding: 0% 5%;
 }
 
 #footerLinks {
   display: grid;
   align-items: center;
   justify-items: center;
+}
+
+#s11Body {
+  padding: 0% 5%;
+}
+
+#LPsection11Address {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (min-width: 400px) {
+  .footerpadding {
+    padding: 10% 0%;
+  }
+
+  #FooterLogo {
+    padding: 8% 0%;
+  }
+}
+
+@media (min-width: 400px) {
+  #FooterLogo {
+    padding: 5% 0%;
+    width: 30%;
+  }
+}
+
+@media (min-width: 560px) {
+  .footerpadding {
+    padding: 10% 0%;
+  }
+
+  #FooterLogo {
+    width: 25%;
+  }
+}
+
+@media (min-width: 650px) {
+  #FooterLogo {
+    width: 20%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1312,6 +1498,7 @@ input[type="number"] {
   #footerLinkContainer {
     grid-area: flinks;
     width: 100%;
+    margin-bottom: 3%;
   }
 
   #FooterLogo {
@@ -1332,6 +1519,11 @@ input[type="number"] {
   }
 }
 
+@media (min-width: 900px) {
+  #s11Body {
+    padding: 0% 10%;
+  }
+}
 @media (min-width: 1024px) {
   .LPsection11 {
     grid-template-columns: 25% 25% 50%;
@@ -1368,6 +1560,8 @@ input[type="number"] {
 
   #s11Body {
     text-align: left;
+    padding: 0%;
+    padding-right: 10%;
   }
 
   #LPsection11Address h4 {

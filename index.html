@@ -34,6 +34,13 @@
     <script src="./JS/jquery.serialize-object.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <!--Sweet Alert 2-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -715,25 +722,26 @@
             dataType: "json",
             data: $form.serializeObject(),
             success: () => {
-              swal(
-                "Success",
+              Swal.fire(
+                "Success!",
                 "We have received your details. We will reach out to you soon.",
                 "success"
               );
+              document.getElementById("input1Element").value = null;
+              document.getElementById("input2Element").value = null;
+              document.getElementById("input3Element").value = null;
+              document.getElementById("input4Element").value = null;
             },
             error: () => {
-              swal(
+              Swal.fire(
                 "Network Error",
                 "Please check your network connection and try again.",
-                "error"
+                "warning"
               );
             }
           });
         } else {
-          swal(
-            "You missed something",
-            "Please enter your name,email, phone number and your enquiry."
-          );
+          Swal.fire("You missed someting", "Please fill all the details.");
         }
       });
     </script>

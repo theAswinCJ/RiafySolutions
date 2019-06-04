@@ -153,6 +153,28 @@ button {
   color: #fb515e;
 }
 
+@media (min-width: 401px) {
+  button {
+    width: 60%;
+  }
+}
+
+@media (min-width: 501px) {
+  button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 560px) {
+  button {
+    width: 40%;
+  }
+
+  #section10inputButton {
+    width: 60%;
+  }
+}
+
 @media (min-width: 768px) {
   button {
     width: 60%;
@@ -163,7 +185,11 @@ button {
 @media (min-width: 1024px) {
   button {
     width: 40%;
-    height: 48px;
+    height: 58px;
+  }
+
+  .s8buttons {
+    width: 70%;
   }
 }
 a {
@@ -454,19 +480,9 @@ input[type="number"] {
   justify-self: center;
 }
 
-@media (min-width: 401px) {
-  #section1Button {
-    width: 60%;
-  }
-}
-
 @media (min-width: 501px) {
   #HeaderLogo {
     width: 30%;
-  }
-
-  #section1Button {
-    width: 50%;
   }
 
   #section1Body {
@@ -479,16 +495,7 @@ input[type="number"] {
   }
 }
 
-@media (min-width: 560px) {
-  #section1Button {
-    width: 40%;
-  }
-}
-
 @media (min-width: 768px) {
-  #section1Button {
-    width: 60%;
-  }
   .LPsection1 {
     grid-template-columns: 25% 35% 40%;
     grid-template-areas:
@@ -1246,6 +1253,102 @@ input[type="number"] {
 ------------------------------------------------------------------------------------
 */
 
+.LPsection8 {
+  display: grid;
+}
+
+.s8image {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.s8blurb {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 10% 0%;
+}
+
+#youarehere {
+  color: #fb515e;
+  margin: 0;
+}
+
+#section8Button1 {
+  background-color: #eef3f8;
+  color: #fb515e;
+  cursor: default;
+}
+
+@media (min-width: 560px) {
+  .s8image {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+}
+
+#s8Title {
+  grid-area: s8Title;
+}
+
+#s8blurb1 {
+  grid-area: s8blurb1;
+}
+
+#s8blurb2 {
+  grid-area: s8blurb2;
+}
+
+#s8blurb3 {
+  grid-area: s8blurb3;
+}
+
+.LPsection8 {
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "s8Title"
+    "s8blurb3"
+    "s8blurb2"
+    "s8blurb1";
+}
+
+@media (min-width: 768px) {
+  .LPsection8 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "s8Title s8Title"
+      "s8blurb3 s8blurb2"
+      "s8blurb1 s8blurb1";
+  }
+
+  #s8blurb1 {
+    margin: 0% 25%;
+    margin-top: 10%;
+  }
+
+  .s8blurbbodies {
+    padding: 0% 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .LPsection8 {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas:
+      "s8Title s8Title s8Title"
+      "s8blurb3 s8blurb2 s8blurb1";
+  }
+
+  #s8blurb1 {
+    margin: 10% 0%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .s8blurbbodies {
+    padding: 0% 8%;
+  }
+}
 /* 
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------

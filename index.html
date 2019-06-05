@@ -69,11 +69,13 @@
     <script>
       function showHideBurger() {
         var headerLinks = document.getElementsByClassName("headerLinkGroup");
-        for (link of headerLinks) {
-          if (link.style.display.toString() == "grid") {
-            link.style.display = "none";
-          } else {
-            link.style.display = "grid";
+        if (window.innerWidth < 768) {
+          for (link of headerLinks) {
+            if (link.style.display.toString() == "grid") {
+              link.style.display = "none";
+            } else {
+              link.style.display = "grid";
+            }
           }
         }
       }
@@ -110,7 +112,7 @@
             />
 
             <div class="headerLinkContainer">
-              <div class="headerLinkGroup">
+              <div class="headerLinkGroup" onclick="showHideBurger()">
                 <a class="headerLinks" id="headerLink1" href="#whychooseus"
                   >Why Choose Us</a
                 >
@@ -151,9 +153,10 @@
             Enquire
           </button>
         </div>
-        <a class="anchor" name="whychooseus"></a>
       </div>
 
+      <a class="anchor" name="whychooseus"></a>
+      <div></div>
       <div id="LPsection2Background" class="even">
         <div class="LPsection2 defaultMarigns">
           <img
@@ -436,10 +439,12 @@
               Logo for the E-sport Team
             </h3>
           </div>
+
+          <a class="anchor" name="services"></a>
+          <div></div>
         </div>
       </div>
 
-      <a class="anchor" name="services"></a>
       <div id="LPsection8Background" class="even">
         <div class="LPsection8 defaultMarigns">
           <h1 id="s8Title">Services by Riafy</h1>
@@ -523,7 +528,6 @@
         <div class="LPsection9 defaultMarigns">
           <h1 id="section9Title" class="whiteText">Let's start right away</h1>
 
-          <a class="anchor" name="enquiry"></a>
           <p id="section9Body" class="whiteText centerText">
             We are always on the lookout for problems that challenge us. So if
             you think you have something that we can work on, get in touch with
@@ -532,6 +536,8 @@
         </div>
       </div>
 
+      <a class="anchor" name="enquiry"></a>
+      <div></div>
       <div id="LPsection10Background" class="even">
         <div class="LPsection10 defaultMarigns">
           <div id="section10InputFormContainer">

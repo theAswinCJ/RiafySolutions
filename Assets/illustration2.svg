@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="685px" height="600px" viewBox="0 0 685 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="632px" height="353px" viewBox="0 0 632 353" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
     <title>Illustration 2@JPG</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="685" height="600"></rect>
+        <rect id="path-1" x="0" y="0" width="685" height="418"></rect>
         <linearGradient x1="50%" y1="96.4436115%" x2="50%" y2="2.28555107%" id="linearGradient-3">
             <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
             <stop stop-color="#B7E3F0" offset="100%"></stop>
@@ -31,16 +31,16 @@
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(0.000000, -860.000000)">
+        <g id="Desktop-HD" transform="translate(-15.000000, -976.000000)">
             <g id="Features" transform="translate(0.000000, 800.000000)">
-                <g id="Illustration-2" transform="translate(0.000000, 60.000000)">
+                <g id="Illustration-2" transform="translate(0.000000, 151.000000)">
                     <g id="Image">
                         <mask id="mask-2" fill="white">
                             <use xlink:href="#path-1"></use>
                         </mask>
-                        <use id="Path" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <g id="Path"></g>
                         <g id="14-01" mask="url(#mask-2)">
-                            <g transform="translate(-104.000000, -130.000000)">
+                            <g transform="translate(-104.000000, -221.000000)">
                                 <g id="Background">
                                     <rect id="Rectangle" fill="url(#linearGradient-3)" fill-rule="nonzero" x="217.6171" y="277.4088" width="456.7658" height="274.958844"></rect>
                                     <g id="Group" transform="translate(236.882000, 308.479111)" fill-rule="nonzero">

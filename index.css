@@ -484,6 +484,16 @@ input[type="number"] {
   padding-top: 5%;
 }
 
+@media (min-width: 768px) {
+  .Header {
+    box-sizing: border-box;
+  }
+
+  .headerLinkContainer {
+    box-sizing: border-box;
+    border-bottom: 1px solid #f1f1f1;
+  }
+}
 /*
 .headerLinkLine {
   width: 60%;
@@ -745,6 +755,10 @@ input[type="number"] {
 @media (min-width: 1440px) {
   #HeaderLogo {
     width: 25%;
+  }
+
+  #illustration1 {
+    margin-top: 10%;
   }
 }
 

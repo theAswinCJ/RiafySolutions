@@ -1051,7 +1051,7 @@ input[type="number"] {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .LPsection4 {
     grid-template-columns: 30% 40% 30%;
     grid-template-areas:
@@ -1080,16 +1080,8 @@ input[type="number"] {
     text-align: left;
   }
 
-  #section4Body2 {
-    display: none;
-  }
-
-  #section4Body3 {
-    display: none;
-  }
   #section4Body4 {
     text-align: left;
-    display: none;
   }
 
   #section4SubTitle1 {

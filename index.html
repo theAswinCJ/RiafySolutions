@@ -129,6 +129,13 @@
                 <a class="headerLinks" id="headerLink6" href="#contact"
                   >Contact</a
                 >
+                <a
+                  class="headerLinks"
+                  id="headerLink7"
+                  href="http://riafy.me"
+                  target="_blank"
+                  >Stories</a
+                >
               </div>
             </div>
           </div>
@@ -667,6 +674,13 @@
                 <a class="footera footerpadding" href="#services">Services</a>
                 <a class="footera footerpadding" href="#enquiry">Enquiry</a>
                 <a class="footera footerpadding" href="#contact">Contact</a>
+
+                <a
+                  class="footera footerpadding"
+                  href="http://riafy.me"
+                  target="_blank"
+                  >Stories</a
+                >
               </div>
             </div>
             <img
@@ -688,7 +702,6 @@
       (function() {
         var above768 = true;
         window.addEventListener("resize", e => {
-          // console.log("resized");
           if (window.innerWidth >= 768) {
             above768 = true;
             var headerLinks = document.getElementsByClassName(
@@ -727,7 +740,7 @@
         let loader = document.getElementById("buttonloader");
 
         loader.style.display = "block";
-        buttonText.innerHTML = "Loading";
+        buttonText.innerHTML = "Submitting";
 
         let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -783,50 +796,6 @@
             }
           });
         }
-
-        /*
-        if (emailRegex.test(email) == true) {
-          Swal.fire("Email Correct", "Email is correct");
-        }
-
-        else if (
-          name.length > 0 &&
-          email.length > 0 &&
-          phone.length > 0 &&
-          enquiry.length > 0
-        ) {
-          var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject(),
-            success: () => {
-              Swal.fire(
-                "Success!",
-                "We have received your details. We will reach out to you soon.",
-                "success"
-              );
-              document.getElementById("input1Element").value = null;
-              document.getElementById("input2Element").value = null;
-              document.getElementById("input3Element").value = null;
-              document.getElementById("input4Element").value = null;
-              button.innerHTML = "Submit";
-            },
-            error: () => {
-              button.innerHTML = "Submit";
-              Swal.fire(
-                "Network Error",
-                "Please check your network connection and try again.",
-                "warning"
-              );
-            }
-          });
-        }
-
-        else {
-          button.innerHTML = "Submit";
-          Swal.fire("You missed someting", "Please fill all the details.");
-        } */
       });
     </script>
   </body>

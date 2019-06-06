@@ -625,6 +625,22 @@
                   <span id="buttonloadingtext">Submit</span>
                 </div>
               </button>
+
+              <input
+                id="input5Element"
+                type="date"
+                name="date"
+                style="display:none;"
+                value="2017-06-01"
+              />
+
+              <input
+                id="input6Element"
+                type="text"
+                name="time"
+                style="display:none;"
+                value="undefined"
+              />
             </form>
           </div>
         </div>
@@ -733,11 +749,31 @@
         let email = document.getElementById("input2Element").value;
         let phone = document.getElementById("input3Element").value;
         let enquiry = document.getElementById("input4Element").value;
+        let date = document.getElementById("input5Element");
+        let time = document.getElementById("input6Element");
         let buttonText = document.getElementById("buttonloadingtext");
         let loader = document.getElementById("buttonloader");
 
         loader.style.display = "block";
         buttonText.innerHTML = "Submitting";
+
+        var gettoday = new Date();
+        var dd = String(gettoday.getDate()).padStart(2, "0");
+        var mm = String(gettoday.getMonth() + 1).padStart(2, "0"); //January is 0!
+        var yyyy = gettoday.getFullYear();
+
+        var today = yyyy + "-" + mm + "-" + dd;
+
+        date.value = today;
+
+        var todaysTime =
+          gettoday.getHours() +
+          ":" +
+          gettoday.getMinutes() +
+          ":" +
+          gettoday.getSeconds();
+
+        time.value = todaysTime.toString();
 
         let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -796,7 +832,7 @@
       });
     </script>
 
-    <!--Load FB Video. Placed here for faster speed loads*/-->
+    <!--Load FB Video. Placed here for faster speed loads-->
     <script type="text/javascript">
       function downloadJSAtOnload() {
         var element = document.createElement("script");

@@ -797,10 +797,26 @@
         }
       });
     </script>
+
+    <script type="text/javascript">
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src =
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3";
+        document.body.appendChild(element);
+      }
+      if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>
   </body>
 
-  <!-- //Load FB Video
-  <script
+  //Load FB Video
+  <!-- <script
+    async
+    defer
     crossorigin="anonymous"
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"
   ></script> -->
